@@ -1,0 +1,13 @@
+
+
+
+
+
+{{ scope:block }}
+
+
+{{# Currently will not hit the cascade or the query tag. #}}
+{{ block:topics order_by="title:desc" }}
+Scoped and with params: {{ title }}<br />
+{{ /block:topics }}
+{{ /scope:block }}
